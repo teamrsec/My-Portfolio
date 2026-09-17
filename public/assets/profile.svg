@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="600" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="50%" stop-color="#1C2541"/>
+      <stop offset="100%" stop-color="#0A1128"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(6, 182, 212, 0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <circle cx="300" cy="240" r="110" fill="#1E293B" stroke="url(#accent)" stroke-width="3"/>
+  <circle cx="300" cy="210" r="50" fill="#334155"/>
+  <path d="M 215 310 C 215 260, 385 260, 385 310 Z" fill="#334155"/>
+  
+  <g transform="translate(100, 420)">
+    <rect width="400" height="210" rx="12" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(6, 182, 212, 0.3)" stroke-width="1.5"/>
+    <text x="200" y="42" text-anchor="middle" fill="#F8FAFC" font-family="monospace" font-size="16" font-weight="bold">ENGINEERING IDENTITY</text>
+    <text x="200" y="70" text-anchor="middle" fill="#06B6D4" font-family="monospace" font-size="12">BUILD · UNDERSTAND · TEST · SECURE</text>
+    
+    <line x1="30" y1="92" x2="370" y2="92" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    
+    <text x="40" y="125" fill="#94A3B8" font-family="monospace" font-size="12">ROLE:</text>
+    <text x="110" y="125" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="600">Flutter &amp; Web Developer</text>
+    
+    <text x="40" y="155" fill="#94A3B8" font-family="monospace" font-size="12">FOCUS:</text>
+    <text x="110" y="155" fill="#10B981" font-family="sans-serif" font-size="12" font-weight="600">Cybersecurity Specialist Studies</text>
+    
+    <text x="40" y="185" fill="#94A3B8" font-family="monospace" font-size="12">STATUS:</text>
+    <text x="110" y="185" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="600">Active Hands-on Labs (2026)</text>
+  </g>
+</svg>

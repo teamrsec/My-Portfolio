@@ -1,0 +1,10 @@
+# User-agent configuration
+User-agent: *
+Allow: /
+
+# Disallow private API endpoints
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://portfolio.local/sitemap.xml
+

@@ -1,0 +1,607 @@
+import {
+  PersonalInfo,
+  JourneyMilestone,
+  PipelineStage,
+  SkillCategory,
+  Project,
+  CyberModule,
+  Certification,
+  ExperienceItem,
+  EducationItem,
+  BlogPost,
+} from "@/types/portfolio";
+
+export const PERSONAL_INFO: PersonalInfo = {
+  name: "Teamr Yheys",
+  email: "Teamryheys12@gmail.com",
+  phone: "+251921889157",
+  location: "Addis Ababa, Ethiopia",
+  github: "https://github.com/teamrsec",
+  githubUsername: "teamrsec",
+  linkedin: "https://www.linkedin.com/in/teamr-yheys/",
+  twitter: "https://x.com/teamryheys12",
+  telegram: "https://t.me/Teamr112",
+  blog: "/blog",
+  resume: "/assets/resume.pdf",
+  profileImage: "/assets/profile.jpg?v=2",
+  primaryRole: "Computer Science Graduate | Flutter & Web Developer | Cybersecurity Student",
+  supportingRole: "Computer Science Graduate · Flutter & Web Developer · Aspiring Cybersecurity Professional",
+  primaryHeadline: "Building Software. Securing Systems.",
+  supportingHeadline: "Building software taught me how systems are created. Cybersecurity is teaching me how those systems can be understood, tested, and secured.",
+  missionStatement: "My goal is to combine my software development background with cybersecurity to understand systems from both sides — how they are built and how they can be secured.",
+  heroParagraphs: [
+    "I'm a Computer Science graduate with a strong background in Flutter and web development, currently expanding my expertise into cybersecurity through advanced studies and hands-on learning.",
+    "I build applications, study how systems work, and continuously explore how they can be tested and secured.",
+  ],
+  metadataBadge: {
+    role: "Flutter & Web Developer",
+    focus: "Cybersecurity",
+    status: "Currently Learning",
+    mode: "Remote",
+  },
+};
+
+export const PIPELINE_STAGES: PipelineStage[] = [
+  {
+    step: "01",
+    title: "BUILD",
+    subtitle: "Engineering Software Foundations",
+    description: "Building mobile, web, and full-stack applications with robust architectures, clean APIs, and modern frameworks.",
+    technologies: ["Flutter", "Dart", "React", "Next.js", "Node.js", "Python"],
+    keyConcepts: [
+      "State Management & Mobile UI",
+      "REST & GraphQL Integration",
+      "Full-Stack API Design",
+      "Component Architecture",
+    ],
+  },
+  {
+    step: "02",
+    title: "UNDERSTAND",
+    subtitle: "Systems, Infrastructure & Protocols",
+    description: "Developing a deeper understanding of how systems communicate, manage state, and operate beneath the application layer.",
+    technologies: ["Networking", "Linux", "Windows Server", "Databases", "Systems"],
+    keyConcepts: [
+      "TCP/IP, DNS, Routing & Subnetting",
+      "Linux Sysadmin & Permissions",
+      "Active Directory & Group Policies",
+      "Database Internals & Queries",
+    ],
+  },
+  {
+    step: "03",
+    title: "TEST",
+    subtitle: "Controlled Assessments & Lab Environments",
+    description: "Learning how systems can be assessed, tested, and challenged in authorized, controlled environments to surface weaknesses.",
+    technologies: ["Vulnerability Assessment", "OSINT", "Security Labs", "Web Security", "Ethical Testing"],
+    keyConcepts: [
+      "OWASP Top 10 Web Risks",
+      "Network Scanning & Packet Analysis",
+      "Reconnaissance & OSINT",
+      "Controlled Exploit Verification",
+    ],
+  },
+  {
+    step: "04",
+    title: "SECURE",
+    subtitle: "Defensive Hardening & Resilient Design",
+    description: "Applying development and security knowledge toward building more resilient systems and growing into future offensive security.",
+    technologies: ["Network Security", "Hardening", "Secure Development", "Incident Investigation", "Future Red-Team Development"],
+    keyConcepts: [
+      "Host & Network Hardening",
+      "Secure Coding Best Practices",
+      "Digital Forensics Fundamentals",
+      "Offensive Security Tradecraft",
+    ],
+  },
+];
+
+export const JOURNEY_TIMELINE: JourneyMilestone[] = [
+  {
+    period: "2025",
+    title: "Computer Science & Engineering Graduate",
+    subtitle: "BSc Degree · Exit Exam Score: 82/100",
+    description: "Completed comprehensive computer science studies covering algorithms, distributed systems, software engineering, databases, and low-level computing.",
+    status: "completed",
+    tags: ["Computer Science", "Algorithms", "Software Engineering"],
+  },
+  {
+    period: "2025",
+    title: "Flutter & Web Development",
+    subtitle: "Full-Stack & Mobile Engineering",
+    description: "Built scalable web applications and high-performance cross-platform mobile apps, mastering responsive UX, client-server synchronization, and modular codebases.",
+    status: "completed",
+    tags: ["Flutter", "Dart", "React", "Node.js"],
+  },
+  {
+    period: "2025",
+    title: "Flutter Developer Internship",
+    subtitle: "Sheqlee Platform Contribution",
+    description: "Contributed to the engineering of Sheqlee, a platform designed to connect freelancers with enterprises across East Africa.",
+    status: "completed",
+    tags: ["Sheqlee", "Mobile Engineering", "Production Deployment"],
+  },
+  {
+    period: "June 2026 – Dec 2026",
+    title: "Advanced Cybersecurity Studies",
+    subtitle: "IBT College Specialist Program",
+    description: "Enrolled in intensive cybersecurity curriculum encompassing network defense, Windows/Linux system administration, infrastructure operations, forensics, and ethical penetration testing.",
+    status: "current",
+    tags: ["IBT College", "Infrastructure Ops", "Network Security"],
+  },
+  {
+    period: "Now",
+    title: "Building Practical Cybersecurity Knowledge",
+    subtitle: "Active Labs, Packet Inspection & Threat Modeling",
+    description: "Hands-on exposure to network mapping with Nmap, traffic dissection in Wireshark, Linux environment hardening, and structured security fundamentals.",
+    status: "current",
+    tags: ["Linux", "Networking", "Wireshark", "Nmap"],
+  },
+  {
+    period: "Next",
+    title: "Offensive Security & Controlled Lab Mastery",
+    subtitle: "CTFs, TryHackMe, Hack The Box & Penetration Testing",
+    description: "Advancing through disciplined hands-on labs, capture-the-flag competitions, active web application testing, and preparing for industry red-team methodologies.",
+    status: "future",
+    tags: ["TryHackMe", "Hack The Box", "CTFs", "Web Security"],
+  },
+];
+
+export const SKILL_CATEGORIES: SkillCategory[] = [
+  {
+    title: "Programming",
+    categoryKey: "programming",
+    description: "Core languages used for building software, scripting automation, and low-level systems understanding.",
+    skills: [
+      { name: "Dart", level: "Advanced" },
+      { name: "Python", level: "Advanced" },
+      { name: "JavaScript", level: "Advanced" },
+      { name: "TypeScript", level: "Advanced" },
+      { name: "C / C++", level: "Advanced" },
+      { name: "Java", level: "Intermediate" },
+      { name: "PHP", level: "Intermediate" },
+    ],
+  },
+  {
+    title: "Mobile Development",
+    categoryKey: "mobile",
+    description: "Cross-platform and native engineering for responsive, production-ready mobile applications.",
+    skills: [
+      { name: "Flutter", level: "Advanced" },
+      { name: "Android", level: "Advanced" },
+      { name: "iOS", level: "Advanced" },
+      { name: "Firebase", level: "Advanced" },
+      { name: "REST APIs", level: "Advanced" },
+    ],
+  },
+  {
+    title: "Web Development",
+    categoryKey: "web",
+    description: "Modern frontend frameworks, server-side runtimes, relational & document databases, and APIs.",
+    skills: [
+      { name: "HTML5 / CSS3", level: "Advanced" },
+      { name: "JavaScript (ES6+)", level: "Advanced" },
+      { name: "React", level: "Advanced" },
+      { name: "Next.js", level: "Advanced" },
+      { name: "Node.js", level: "Advanced" },
+      { name: "Express", level: "Advanced" },
+      { name: "MongoDB", level: "Advanced" },
+      { name: "PostgreSQL", level: "Intermediate" },
+    ],
+  },
+  {
+    title: "Cybersecurity",
+    categoryKey: "cybersecurity",
+    description: "Active technical exploration, lab operations, protocol analysis, and defensive/offensive fundamentals.",
+    skills: [
+      { name: "Linux Administration", level: "Advanced" },
+      { name: "Networking (TCP/IP, OSI)", level: "Intermediate" },
+      { name: "Wireshark Packet Analysis", level: "Intermediate" },
+      { name: "Nmap Network Scanning", level: "Intermediate" },
+      { name: "Burp Suite Web Proxy", level: "Beginner" },
+      { name: "Metasploit Framework", level: "Beginner" },
+      { name: "OWASP Top 10", level: "Beginner" },
+      { name: "Web Application Security", level: "Beginner" },
+      { name: "Vulnerability Assessment", level: "Learning" },
+      { name: "Penetration Testing", level: "Learning" },
+      { name: "Active Directory & Windows Server", level: "Learning" },
+      { name: "OSINT Techniques", level: "Hands-on exposure" },
+    ],
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    title: "Sheqlee",
+    slug: "sheqlee",
+    category: "Mobile",
+    role: "Flutter Developer Intern",
+    date: "2025",
+    featured: true,
+    technologies: ["Flutter", "Dart", "REST API", "State Management", "Git"],
+    image: "/assets/projects/sheqlee.png",
+    description: "A cross-platform mobile platform designed to connect freelancers and companies, developed as part of a Flutter developer internship.",
+    longDescription: "Sheqlee serves as a marketplace bridge connecting regional freelance talent with companies seeking specialized digital services. As a Flutter developer intern, I helped build responsive screens, integrate backend REST APIs, handle authenticated sessions, and ensure predictable state management across both Android and iOS targets.",
+    overview: "During my internship, I worked alongside engineering mentors to build key parts of the client-facing mobile application. The primary challenge was crafting a fluid UI that operates smoothly across varied Android and iOS hardware configurations while maintaining strict data consistency for active bids and project listings.",
+    problem: "Freelancers and clients in emerging digital markets often struggle with fragmented communication, inconsistent job discovery, and sluggish mobile experiences on lower-bandwidth mobile connections.",
+    solution: "Developed performant Flutter modules featuring smart data caching, intuitive navigation hierarchies, real-time status updates, and resilient network call retries.",
+    architecture: [
+      "Layered Clean Architecture separating presentation, domain, and data layers.",
+      "Repository pattern abstracting REST endpoint communication with robust HTTP interceptors.",
+      "Reactive state management providing instant UI feedback on actions.",
+      "Cached asset pipelines and adaptive layouts ensuring fluid 60fps rendering.",
+    ],
+    challenges: [
+      "Handling network volatility gracefully with cached offline views and optimistic state updates.",
+      "Designing responsive layouts that gracefully accommodate diverse screen aspect ratios across budget and flagship smartphones.",
+    ],
+    lessons: [
+      "Deepened practical understanding of production Flutter development and cross-platform UI profiling.",
+      "Gained firsthand experience with collaborative Git workflows, code reviews, and API contracts.",
+    ],
+    futureImprovements: [
+      "End-to-end encrypted in-app messaging between freelancers and hirers.",
+      "Biometric authentication (Fingerprint / Face Unlock) for secure fast logins.",
+    ],
+    demo: undefined,
+  },
+  {
+    title: "Tigrigna Speech-to-Text",
+    slug: "tigrigna-speech-to-text",
+    category: "AI & Python",
+    role: "Lead Developer",
+    date: "2025",
+    featured: true,
+    technologies: ["Python", "Audio Processing", "Machine Learning", "Speech Recognition", "NumPy"],
+    image: "/assets/projects/tigrigna-stt.png",
+    description: "A machine learning and audio processing project dedicated to transcribing spoken Tigrigna audio into accurate Geez-script text.",
+    longDescription: "Tigrigna is an under-resourced Semitic language spoken by millions across Eritrea and northern Ethiopia. This project tackled acoustic processing, audio feature extraction, and phonetic alignment to convert spoken Tigrigna into digital text representations.",
+    overview: "Speech recognition for low-resource languages presents unique challenges due to scarce labeled corpora, distinct phonetic nuances, and dialectal variations. This project implemented acoustic preprocessing, noise reduction, and spectral analysis pipelines to generate clean transcriptions.",
+    problem: "Most commercial speech engines provide zero support for Tigrigna, leaving native speakers excluded from voice-driven digital accessibility and transcription tools.",
+    solution: "Engineered a Python processing pipeline that performs audio cleaning, spectrogram generation, feature extraction, and phonetic decoding tailored to the phonology of Tigrigna.",
+    architecture: [
+      "Audio preprocessing module: sampling rate normalization, noise reduction, silence clipping.",
+      "Feature engineering: MFCC (Mel-frequency cepstral coefficients) and spectrogram extraction.",
+      "Acoustic classification and language model decoding map sound units to Tigrigna Geez characters.",
+    ],
+    challenges: [
+      "Scarcity of standardized public audio datasets for Tigrigna.",
+      "Handling regional variations and ambient recording noises from diverse recording devices.",
+    ],
+    lessons: [
+      "Mastered Python scientific libraries (NumPy, SciPy, Librosa) and digital signal processing principles.",
+      "Gained deep insight into how tokenizers and language models map acoustic representations to semantic tokens.",
+    ],
+    futureImprovements: [
+      "Integrating state-of-the-art transformer architectures (Whisper fine-tuning) on expanded datasets.",
+      "Building a lightweight Flutter front-end for real-time mobile voice dictation.",
+    ],
+    demo: undefined,
+  },
+  {
+    title: "Merkato Store",
+    slug: "merkato-store",
+    category: "Full Stack",
+    role: "Full-Stack Engineer",
+    date: "2025",
+    featured: true,
+    technologies: ["React", "Express.js", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
+    image: "/assets/projects/merkato-store.png",
+    description: "An e-commerce web platform engineered around the practical commercial workflows and shopping behaviors of local Ethiopian consumers.",
+    longDescription: "Inspired by the vibrant commerce of Merkato in Addis Ababa, this full-stack web application provides a localized marketplace with real-time product catalogs, category filtering, cart management, vendor dashboards, and secure token-based user sessions.",
+    overview: "Built to demonstrate comprehensive full-stack architecture, from designing normalized schema in MongoDB to implementing secure JWT authentication, input sanitization, and responsive user interfaces with React.",
+    problem: "Conventional Western e-commerce templates don't accommodate local merchant bargaining dynamics, localized currency handling, or phone-first mobile browsing realities.",
+    solution: "Architected a custom MERN-stack application prioritizing lightweight page weights, instant search, role-based merchant dashboards, and localized payment gateway integration patterns.",
+    architecture: [
+      "Frontend: React with responsive design, dynamic state management, and optimized asset delivery.",
+      "Backend: Express.js REST API with input validation middleware and rate limiting.",
+      "Database: MongoDB with indexed product catalogs and order history schemas.",
+      "Security: HTTP-only cookies, password hashing with bcrypt, and sanitization against injection vectors.",
+    ],
+    challenges: [
+      "Implementing resilient search and faceted filtering across multidimensional product categories without query latency.",
+      "Securing backend endpoints against parameter tampering and unauthorized state mutations.",
+    ],
+    lessons: [
+      "Solidified understanding of end-to-end web security fundamentals, CORS, CSRF considerations, and JWT lifecycle management.",
+      "Honed full-stack architectural design and decoupled API structures.",
+    ],
+    futureImprovements: [
+      "Integrating Telebirr and local mobile payment webhooks.",
+      "PWA (Progressive Web App) offline caching for product browsing.",
+    ],
+    demo: undefined,
+  },
+  {
+    title: "MD5 Hash Converter & Explorer",
+    slug: "md5-hash-converter",
+    category: "Security & Tools",
+    role: "Developer & Security Learner",
+    date: "2025",
+    featured: true,
+    technologies: ["Python", "Cryptography Concepts", "CLI", "Hash Analysis"],
+    image: "/assets/projects/md5-converter.png",
+    description: "A Python utility for computing, analyzing, and exploring MD5 cryptographic checksums, featuring an educational security analysis of hash collision vulnerabilities.",
+    longDescription: "Developed as an exploration into digest algorithms and cryptographic properties, this Python tool generates MD5 digests for strings and files, and provides an educational demonstration of why collision attacks render MD5 obsolete for modern security applications.",
+    securityNote: "Educational Security Note: MD5 is cryptographically broken due to well-documented collision vulnerabilities (first demonstrated in 2004). It remains useful for fast non-security integrity checksums, but must NEVER be used for password hashing, digital signatures, or security-sensitive authentication. Modern implementations should use Argon2, bcrypt, or SHA-256/SHA-512.",
+    overview: "Understanding how algorithms fail is as crucial as understanding how they function. This tool was built to study the mechanics of one-way hash functions, padding schemes, avalanche effects, and the mathematical vulnerabilities that led to practical collision attacks against MD5.",
+    problem: "Many beginning programmers still mistakenly use MD5 for password storage or digital verification without understanding its cryptographic demise.",
+    solution: "Created an interactive Python tool that computes hashes, demonstrates the avalanche effect (where altering a single bit alters the entire hash), and clearly explains preimage vs collision resistance.",
+    architecture: [
+      "Core hash computation engine using Python hashlib with file streaming for large files.",
+      "Avalanche analysis module measuring bitwise Hamming distance across tiny input changes.",
+      "Security documentation generator explaining CVEs and collision attack proofs.",
+    ],
+    challenges: [
+      "Accurately calculating bitwise differences between hexadecimal hash digests to visualize the avalanche effect.",
+      "Designing an intuitive command-line interface that doubles as a security explainer.",
+    ],
+    lessons: [
+      "Gained deep appreciation for the mathematical prerequisites of cryptographic security (collision resistance, preimage resistance).",
+      "Reinforced the tenet: never roll your own crypto, and keep systems updated to modern cipher suites.",
+    ],
+    futureImprovements: [
+      "Add comparative benchmarking against modern hashing standards: SHA-256, SHA-3, and memory-hard Argon2id.",
+      "Integrate automated checks against known rainbow table lookup APIs for educational awareness.",
+    ],
+    demo: undefined,
+  },
+];
+
+export const CYBER_MODULES: CyberModule[] = [
+  {
+    title: "Introduction to Cybersecurity",
+    status: "Completed",
+    institution: "IBT College / Cisco / Harvard Online",
+    description: "Foundational principles of information security: confidentiality, integrity, availability (CIA triad), threat vectors, authentication, and defensive mindset.",
+    keyTopics: ["CIA Triad", "Threat Actors", "Attack Surfaces", "Security Governance"],
+  },
+  {
+    title: "Computer Networking",
+    status: "Completed",
+    institution: "BSc Curriculum & IBT College",
+    description: "Comprehensive study of network layers, protocol suites, packet structure, subnetting, switching, routing, and traffic behavior.",
+    keyTopics: ["TCP/IP & OSI Model", "DNS, DHCP & ARP", "Subnetting / IPv4 / IPv6", "Packet Capture & Analysis"],
+  },
+  {
+    title: "Linux Administration",
+    status: "Completed",
+    institution: "BSc Curriculum & IBT College",
+    description: "System management, file permissions, shell scripting, service configuration, user privileges, cron jobs, and command-line system inspection.",
+    keyTopics: ["Bash Scripting", "File System Hierarchy", "Permissions & SUID", "Systemd Services & Logs"],
+  },
+  {
+    title: "Windows Server",
+    status: "Completed",
+    institution: "IBT College",
+    description: "Enterprise operating system infrastructure: Active Directory Domain Services, Group Policy Objects (GPOs), role management, and access controls.",
+    keyTopics: ["Active Directory (AD DS)", "Group Policy Objects", "DNS & DHCP Server Roles", "Access Control Lists (ACLs)"],
+  },
+  {
+    title: "Enterprise Network Security & Hardening",
+    status: "In Progress",
+    institution: "IBT College (2026)",
+    description: "Designing defensive perimeters: firewalls, DMZ architecture, IDS/IPS configuration, VLAN segmentation, and service hardening.",
+    keyTopics: ["Firewall Rules & iptables", "VLAN Segmentation", "IDS / IPS Concepts", "Endpoint Hardening"],
+  },
+  {
+    title: "Vulnerability Assessment & Infrastructure Operations",
+    status: "In Progress",
+    institution: "IBT College (2026)",
+    description: "Methodologies for identifying, classifying, and remediating security weaknesses across network assets and infrastructure services.",
+    keyTopics: ["Vulnerability Scanners", "Patch Management", "Common Vulnerabilities & Exposures (CVE)", "Risk Prioritization"],
+  },
+  {
+    title: "Digital Forensics & Incident Investigation",
+    status: "In Progress",
+    institution: "IBT College (2026)",
+    description: "Chain of custody, volatile memory analysis, artifact recovery, log correlation, and post-incident investigation procedures.",
+    keyTopics: ["Evidence Preservation", "Windows Event Logs & Syslog", "Memory Artifacts", "Timeline Reconstruction"],
+  },
+  {
+    title: "Ethical Hacking & Penetration Testing",
+    status: "In Progress",
+    institution: "IBT College (2026)",
+    description: "Authorized testing methodologies: reconnaissance, scanning, enumeration, vulnerability discovery, exploit verification, and reporting.",
+    keyTopics: ["Reconnaissance & OSINT", "Nmap & Service Enumeration", "Web Exploitation Fundamentals", "Technical Reporting"],
+  },
+];
+
+export const HANDS_ON_LEARNING = [
+  {
+    title: "Networking Labs",
+    description: "Configuring simulated network topologies, verifying routing tables, inspecting ARP packets, and troubleshooting subnet boundaries.",
+    icon: "Network",
+  },
+  {
+    title: "Linux Administration",
+    description: "Hardening SSH configurations, auditing user privileges, managing systemd units, and analyzing auth.log and journalctl outputs.",
+    icon: "Terminal",
+  },
+  {
+    title: "Windows Server & AD",
+    description: "Deploying domain controllers in virtualized lab environments, enforcing password policies via GPO, and configuring user rights.",
+    icon: "Server",
+  },
+  {
+    title: "Phishing & Social Engineering Labs",
+    description: "Studying email header spoofing, malicious macro behavior, and defensive mail filters within isolated sandboxes.",
+    icon: "ShieldAlert",
+  },
+  {
+    title: "OSINT Techniques",
+    description: "Gathering publicly available intelligence via DNS lookups, WHOIS records, certificate transparency logs, and search dorks.",
+    icon: "Search",
+  },
+  {
+    title: "Security Fundamentals",
+    description: "Evaluating encryption ciphers, public-key infrastructure (PKI), TLS handshakes, and identity management best practices.",
+    icon: "Key",
+  },
+];
+
+export const WHATS_NEXT = [
+  {
+    target: "TryHackMe Learning Paths",
+    focus: "Pre-Security, Complete Beginner, and Web Fundamentals modules.",
+    status: "Active Goal",
+  },
+  {
+    target: "Hack The Box (HTB)",
+    focus: "Starting Point machines, Linux box challenges, and privilege escalation labs.",
+    status: "Planned",
+  },
+  {
+    target: "Capture The Flag (CTF) Competitions",
+    focus: "Jeopardy-style challenges in web exploitation, cryptography, and forensics.",
+    status: "Planned",
+  },
+  {
+    target: "Dedicated Web Security Labs",
+    focus: "Hands-on practice with PortSwigger Web Security Academy (SQLi, XSS, CSRF, SSRF).",
+    status: "Planned",
+  },
+  {
+    target: "Junior Penetration Testing Foundations",
+    focus: "Structured methodology, documentation, and industry-standard testing workflows.",
+    status: "Future Milestone",
+  },
+];
+
+export const CERTIFICATIONS: Certification[] = [
+  {
+    name: "Introduction to Cybersecurity",
+    issuer: "Cisco Networking Academy",
+    date: "2025",
+    description: "Covers the fundamentals of cyber trends, threat actors, defensive technologies, and high-level cybersecurity concepts.",
+    category: "Cybersecurity",
+  },
+  {
+    name: "Introduction to Cybersecurity",
+    issuer: "Harvard Online",
+    date: "2025",
+    description: "Explores cyber threats, risk management, data privacy, and organizational resilience from a technical and strategic perspective.",
+    category: "Cybersecurity",
+  },
+  {
+    name: "Fortinet NSE 1 — Network Security Associate",
+    issuer: "Fortinet",
+    date: "2025",
+    description: "Covers the evolving threat landscape, network security architectures, and core firewall defense mechanisms.",
+    category: "Cybersecurity",
+  },
+  {
+    name: "Full Stack Developer Certificate",
+    issuer: "FCA (Front-end & Full Stack Program)",
+    date: "2024",
+    description: "Comprehensive software development curriculum focusing on frontend frameworks, backend web APIs, databases, and version control.",
+    category: "Development",
+  },
+  {
+    name: "Capital Markets Certification",
+    issuer: "Capital Markets Institute / Financial Authority",
+    date: "2024",
+    description: "Financial systems analysis, market regulations, transactional compliance, and digital security governance.",
+    category: "Other",
+  },
+  {
+    name: "Data Entry / NGO Volunteer Certificate",
+    issuer: "NGO Community Development Program",
+    date: "2023",
+    description: "Recognized for community service, database maintenance, accurate data recording, and digital operations support.",
+    category: "Other",
+  },
+];
+
+export const EXPERIENCES: ExperienceItem[] = [
+  {
+    role: "Flutter Developer Intern",
+    company: "METNEE PLC",
+    project: "Sheqlee Freelance Platform",
+    timeline: "November 2024 — February 2025",
+    location: "Hybrid / Remote",
+    description: "Contributed to the development of a Flutter-based platform connecting freelancers and companies.",
+    responsibilities: [
+      "Collaborated with the engineering team to build modular, maintainable Flutter UI screens from Figma designs.",
+      "Integrated backend RESTful API endpoints for user authentication, job discovery, and profile management.",
+      "Debugged state lifecycle events and optimized network requests to minimize data overhead on mobile devices.",
+      "Participated in agile standups, sprint reviews, and Git feature-branch workflows.",
+    ],
+    technologies: ["Flutter", "Dart", "REST APIs", "Git", "State Management"],
+    achievements: [
+      "Successfully shipped key user profile and search screen components on schedule.",
+      "Improved screen responsiveness across target low-memory Android test devices.",
+    ],
+  },
+];
+
+export const EDUCATION: EducationItem[] = [
+  {
+    degree: "BSc. in Computer Science & Engineering",
+    institution: "Mekelle University — Mekelle Institute of Technology Campus",
+    period: "Graduated 2025",
+    scoreHighlight: "National University Exit Examination: 82 / 100",
+    description: "Rigorous five-year engineering foundation in computing science, software systems, computer architecture, databases, networks, and mathematics.",
+    coursework: [
+      "Data Structures & Algorithms",
+      "Computer Networks & Protocols",
+      "Operating Systems & Low-Level Architecture",
+      "Database Systems & Schema Design",
+      "Software Engineering & Architecture",
+      "Object-Oriented Programming (C++, Java)",
+    ],
+  },
+  {
+    degree: "Advanced Cybersecurity Specialist Program",
+    institution: "IBT College",
+    period: "June 2026 — December 2026",
+    scoreHighlight: "Upcoming Academic Specialist Studies",
+    description: "Intensive post-graduate specialization focusing on enterprise security operations, systems administration, network defense, forensics, and ethical penetration testing.",
+    coursework: [
+      "Introduction to Cybersecurity & Defensive Principles",
+      "Computer Networking & Protocol Operations",
+      "Windows Server & Active Directory Hardening",
+      "Linux Systems Administration & Scripting",
+      "Enterprise Network Security & Perimeters",
+      "Vulnerability Assessment & Infrastructure Ops",
+      "Digital Forensics & Incident Investigation",
+      "Ethical Hacking & Penetration Testing Methodologies",
+    ],
+  },
+];
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "from-builder-to-defender",
+    title: "From Builder to Defender: Why Software Engineering is a Superpower in Cybersecurity",
+    date: "Coming Soon",
+    excerpt: "How knowing how code compiles, APIs talk, and state is preserved changes the way you look at vulnerabilities and threat models.",
+    category: "Career Journey",
+    readTime: "5 min read",
+    published: false,
+    content: "Full write-up currently in preparation.",
+  },
+  {
+    slug: "demystifying-wireshark-packet-analysis",
+    title: "Demystifying Wireshark: What a Developer Sees in Network Traffic",
+    date: "Coming Soon",
+    excerpt: "Moving past browser devtools into raw TCP streams, DNS lookups, and TLS handshakes to diagnose and secure communication.",
+    category: "Networking",
+    readTime: "6 min read",
+    published: false,
+    content: "Full write-up currently in preparation.",
+  },
+  {
+    slug: "md5-postmortem-cryptographic-decay",
+    title: "Cryptographic Post-Mortem: Why MD5 Collisions Changed Software Security Forever",
+    date: "Coming Soon",
+    excerpt: "A technical breakdown of one-way hash degradation, Wang's 2004 collision proofs, and why legacy checksums linger in modern codebases.",
+    category: "Cybersecurity",
+    readTime: "7 min read",
+    published: false,
+    content: "Full write-up currently in preparation.",
+  },
+];
+
+export const ETHICAL_SECURITY_DISCLAIMER =
+  "Security testing and offensive-security activities presented here are performed for educational, authorized, and controlled environments.";
